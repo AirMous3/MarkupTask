@@ -8,6 +8,7 @@ export const ContentInput = styled.div`
   height: 68px;
   border-radius: 40px;
   background: #ffffff;
+  margin-bottom: 120px;
 `;
 export const MessageIcon = styled.div`
   background-image: url(${union});

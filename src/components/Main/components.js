@@ -1,12 +1,11 @@
 import styled from "styled-components";
+import lines from "../../assets/icons/bottomLines.svg";
 
 export const MainWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
   img {
-    width: 740px;
-    height: 885px;
     margin-top: -120px;
     z-index: -1;
   }
@@ -44,4 +43,32 @@ export const ContentDescription = styled.div`
   height: 90px;
   opacity: 0.7;
   margin-bottom: 52px;
+`;
+
+export const ContentStats = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const StatNumber = styled.div`
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 66px;
+  letter-spacing: -4px;
+  color: ${(props) => props.color || "black"};
+  margin-bottom: 13px;
+`;
+
+export const StatDescription = styled.div`
+  color: black;
+  width: 141px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 24px;
+`;
+
+export const SectionWrapper = styled.section`
+  background-image: url(${lines});
+  background-repeat: no-repeat;
+  background-position: bottom left;
 `;

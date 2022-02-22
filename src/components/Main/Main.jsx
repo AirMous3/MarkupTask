@@ -4,15 +4,19 @@ import heroImage from "../../assets/images/Hero Image.png";
 import {
   ContentDescription,
   ContentOffer,
+  ContentStats,
   ContentTitle,
   MainContent,
   MainWrapper,
+  SectionWrapper,
+  StatDescription,
+  StatNumber,
 } from "./components";
 import { GetStartedForm } from "../GetStartedForm/GetStartedForm";
 
 export const Main = () => {
   return (
-    <section>
+    <SectionWrapper>
       <Container>
         <MainWrapper>
           <MainContent>
@@ -29,10 +33,32 @@ export const Main = () => {
             </ContentDescription>
 
             <GetStartedForm />
+
+            <ContentStats>
+              <div>
+                <StatNumber>240</StatNumber>
+                <StatDescription>
+                  Qualified Doctors & Medical Specialists
+                </StatDescription>
+              </div>
+              <div>
+                <StatNumber color="#215EE9">1.456</StatNumber>
+                <StatDescription>
+                  Medical Tests Done For Our Patients
+                </StatDescription>
+              </div>
+              <div>
+                <StatNumber>1M+</StatNumber>
+                <StatDescription>
+                  Years of Experience The Medical Field
+                </StatDescription>
+              </div>
+            </ContentStats>
           </MainContent>
+
           <img src={heroImage} alt="heroImage" />
         </MainWrapper>
       </Container>
-    </section>
+    </SectionWrapper>
   );
 };
