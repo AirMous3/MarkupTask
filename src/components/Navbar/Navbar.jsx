@@ -1,20 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-
-const UlWrapper = styled.ul`
-  display: flex;
-  margin-left: 100px;
-
-  li {
-    margin-left: 45px;
-  }
-  a {
-    color: #7d8790;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-  }
-`;
+import { UlWrapper } from "./components";
 
 export const Navbar = () => {
   return (
