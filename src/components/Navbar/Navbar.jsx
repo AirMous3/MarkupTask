@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const UlWrapper = styled.ul`
   display: flex;
+  margin-left: 100px;
 
   li {
     margin-left: 45px;

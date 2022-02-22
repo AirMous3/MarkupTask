@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Navbar } from "../Navbar/Navbar";
 import { Title } from "../Title/Title";
 import { Login } from "../Login/Login";
+import { Container } from "../../App";
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -14,11 +15,13 @@ const HeaderWrapper = styled.div`
 export const Header = () => {
   return (
     <header>
-      <HeaderWrapper>
-        <Title />
-        <Navbar />
-        <Login />
-      </HeaderWrapper>
+      <Container>
+        <HeaderWrapper>
+          <Title />
+          <Navbar />
+          <Login />
+        </HeaderWrapper>
+      </Container>
     </header>
   );
 };
