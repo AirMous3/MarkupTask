@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  ContentInput,
-  Input,
-  InputButton,
-  MessageIcon,
-} from "../Main/components";
+import { ContentInput, Input, InputButton, MessageIcon } from "./components";
 
 export const GetStartedForm = () => {
   const [email, setEmail] = useState("");
