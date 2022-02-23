@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import union from "../../assets/icons/Union.svg";
 
-export const ContentInput = styled.div`
+export const Form = styled.form`
   display: flex;
   align-items: center;
   width: 508px;
   height: 68px;
   border-radius: 40px;
   background: #ffffff;
-  margin-bottom: 120px;
+  margin-bottom: 117px;
 `;
 export const MessageIcon = styled.div`
   background-image: url(${union});

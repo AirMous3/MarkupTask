@@ -1,14 +1,11 @@
 import styled from "styled-components";
 import lines from "../../assets/icons/bottomLines.svg";
+import vector7 from "../../assets/images/Vector7.png";
+import vector6 from "../../assets/images/Vector6.png";
 
 export const MainWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-
-  img {
-    margin-top: -120px;
-    z-index: -1;
-  }
 `;
 
 export const MainContent = styled.div`
@@ -48,6 +45,7 @@ export const ContentDescription = styled.div`
 export const ContentStats = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-right: -25px;
 `;
 
 export const StatNumber = styled.div`
@@ -69,6 +67,6 @@ export const StatDescription = styled.div`
 
 export const SectionWrapper = styled.section`
   background-image: url(${lines});
-  background-repeat: no-repeat;
+  background-repeat: no-repeat no-repeat;
   background-position: bottom left;
 `;

@@ -13,6 +13,30 @@ import {
   StatNumber,
 } from "./components";
 import { GetStartedForm } from "../GetStartedForm/GetStartedForm";
+import styled from "styled-components";
+import vector7 from "../../assets/images/Vector7.png";
+import vector6 from "../../assets/images/Vector6.png";
+
+const MainImages = styled.div`
+  position: relative;
+  z-index: -1;
+
+  img {
+    margin-top: -120px;
+    filter: drop-shadow(50px -56px 104px rgba(28, 91, 235, 0.05));
+  }
+`;
+
+const CloudTop = styled.img`
+  position: absolute;
+  top: 200px;
+  left: 0;
+`;
+const CloudBottom = styled.img`
+  position: absolute;
+  bottom: 0;
+  left: 289px;
+`;
 
 export const Main = () => {
   return (
@@ -55,8 +79,12 @@ export const Main = () => {
               </div>
             </ContentStats>
           </MainContent>
+          <MainImages>
+            <CloudTop src={vector6} alt="" />
+            <CloudBottom src={vector7} alt="" />
 
-          <img src={heroImage} alt="heroImage" />
+            <img src={heroImage} alt="heroImage" />
+          </MainImages>
         </MainWrapper>
       </Container>
     </SectionWrapper>
