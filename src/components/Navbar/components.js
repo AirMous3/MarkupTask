@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const UlWrapper = styled.ul`
   display: flex;
-  margin-left: 31px;
+  margin-left: 25px;
 
   li {
-    margin-left: 45px;
+    margin-left: 46px;
   }
   a {
     font-style: normal;

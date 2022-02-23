@@ -39,7 +39,7 @@ export const ContentDescription = styled.div`
   width: 520px;
   height: 90px;
   opacity: 0.7;
-  margin-bottom: 52px;
+  margin-bottom: 50px;
 `;
 
 export const ContentStats = styled.div`

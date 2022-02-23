@@ -16,8 +16,8 @@ export const RegisterButton = styled.button`
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  margin-left: 40px;
-  margin-right: 60px;
+  margin-left: 39px;
+  margin-right: 58px;
   border: none;
   background: #215ee9;
   color: white;
@@ -35,7 +35,7 @@ export const RegisterButton = styled.button`
 
 export const NotificationIcon = styled.div`
   background-image: url(${notificationIcon});
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 `;

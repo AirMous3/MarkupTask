@@ -4,11 +4,11 @@ import union from "../../assets/icons/Union.svg";
 export const Form = styled.form`
   display: flex;
   align-items: center;
-  width: 508px;
+  width: 514px;
   height: 68px;
   border-radius: 40px;
   background: #ffffff;
-  margin-bottom: 117px;
+  margin-bottom: 120px;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
     0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0531481),
     0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185),
@@ -19,7 +19,7 @@ export const Form = styled.form`
 export const MessageIcon = styled.div`
   background-image: url(${union});
   margin-left: 24px;
-  margin-right: 21px;
+  margin-right: 20px;
   width: 20px;
   height: 16px;
   opacity: 0.2;
@@ -27,7 +27,13 @@ export const MessageIcon = styled.div`
 export const Input = styled.input`
   border: none;
   outline: none;
-  width: 250px;
+  width: 255px;
+
+  ::placeholder {
+    font-size: 16px;
+    line-height: 19px;
+    opacity: 0.2;
+  }
 `;
 export const InputButton = styled.button`
   width: 180px;
