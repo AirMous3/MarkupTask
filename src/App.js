@@ -15,7 +15,7 @@ const AppMain = styled.main`
   padding-top: 150px;
   background-image: url(${topLines});
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: 79% 7%;
 `;
 export const App = () => {
   return (

@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import lines from "../../assets/icons/bottomLines.svg";
-import vector7 from "../../assets/images/Vector7.png";
-import vector6 from "../../assets/images/Vector6.png";
 
 export const MainWrapper = styled.div`
   display: flex;
@@ -68,5 +66,6 @@ export const StatDescription = styled.div`
 export const SectionWrapper = styled.section`
   background-image: url(${lines});
   background-repeat: no-repeat no-repeat;
-  background-position: bottom left;
+  background-position: 9% 95%;
+  padding-bottom: 50px;
 `;
