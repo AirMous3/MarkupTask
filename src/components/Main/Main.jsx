@@ -22,20 +22,21 @@ const MainImages = styled.div`
   z-index: -1;
 
   img {
-    margin-top: -120px;
+    margin-top: -143px;
+    margin-left: 38px;
     filter: drop-shadow(50px -56px 104px rgba(28, 91, 235, 0.05));
   }
 `;
 
 const CloudTop = styled.img`
   position: absolute;
-  top: 200px;
-  left: 0;
+  top: 199px;
+  left: 249px;
 `;
 const CloudBottom = styled.img`
   position: absolute;
-  bottom: 0;
-  left: 289px;
+  bottom: -46px;
+  left: 66px;
 `;
 
 export const Main = () => {
@@ -80,8 +81,8 @@ export const Main = () => {
             </ContentStats>
           </MainContent>
           <MainImages>
-            <CloudTop src={vector6} alt="" />
-            <CloudBottom src={vector7} alt="" />
+            <CloudTop src={vector6} alt="CloudImageTop" />
+            <CloudBottom src={vector7} alt="CloudImageBottom" />
 
             <img src={heroImage} alt="heroImage" />
           </MainImages>
