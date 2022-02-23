@@ -28,6 +28,20 @@ export const ContentOffer = styled.div`
   letter-spacing: -0.01em;
   width: 543px;
   height: 198px;
+  span {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 220px;
+      height: 26px;
+      background: #bed2ff;
+      filter: blur(44px);
+      z-index: -1;
+    }
+  }
 `;
 
 export const ContentDescription = styled.div`

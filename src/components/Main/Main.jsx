@@ -22,6 +22,7 @@ const MainImages = styled.div`
   z-index: -1;
 
   img {
+    width: 100%;
     margin-top: -143px;
     margin-left: 38px;
     filter: drop-shadow(50px -56px 104px rgba(28, 91, 235, 0.05));
@@ -31,12 +32,16 @@ const MainImages = styled.div`
 const CloudTop = styled.img`
   position: absolute;
   top: 199px;
-  left: 249px;
+  //left: 249px;
+  max-width: 523px;
+  padding-left: calc(100% - 523px);
 `;
 const CloudBottom = styled.img`
   position: absolute;
   bottom: -46px;
-  left: 66px;
+  //left: 66px;
+  max-width: 801px;
+  padding-left: calc(100% - 801px);
 `;
 
 export const Main = () => {
@@ -48,7 +53,7 @@ export const Main = () => {
             <ContentTitle>Booking of doctor’s appointment</ContentTitle>
 
             <ContentOffer>
-              Don’t Miss Our Exclusive Patient Special
+              Don’t Miss Our Exclusive Patient <span>Special</span>
             </ContentOffer>
 
             <ContentDescription>
