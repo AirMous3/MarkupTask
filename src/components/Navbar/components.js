@@ -7,6 +7,23 @@ export const UlWrapper = styled.ul`
 
   li {
     margin-left: 46px;
+
+    &:first-child a {
+      position: relative;
+      color: ${(props) => props.theme.colors.primary};
+    }
+
+    &:first-child a::after {
+      content: "";
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: ${(props) => props.theme.colors.primary};
+      position: absolute;
+      left: calc(50% - 3.5px);
+      bottom: -16px;
+    }
   }
 
   a {

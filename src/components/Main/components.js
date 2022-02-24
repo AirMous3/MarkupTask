@@ -84,7 +84,7 @@ export const ContentDescription = styled.div`
   line-height: 30px;
   max-width: 520px;
   opacity: 0.7;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 
   @media ${TABLET} {
     font-size: 18px;

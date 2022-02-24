@@ -53,6 +53,7 @@ export const HeaderWrapper = styled.div`
     ${Button} {
       margin-left: 41px;
       margin-right: 18px;
+      padding: 17px 40px 16px 42px;
     }
   }
   @media ${TABLET} {
