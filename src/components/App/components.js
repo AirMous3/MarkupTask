@@ -18,6 +18,6 @@ export const AppMain = styled.main`
   }
 
   @media ${MOBILE} {
-    padding-top: 20px;
+    padding-top: 23px;
   }
 `;

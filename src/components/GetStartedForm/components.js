@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import union from "../../assets/icons/Union.svg";
-import { DESKTOP, MOBILE, TABLET } from "../../constants/Variables";
+import {
+  DESKTOP,
+  MOBILE,
+  MOBILE_SMALL,
+  TABLET,
+} from "../../constants/Variables";
 import { Button } from "../ReusableComponents/components";
 
 export const Form = styled.form`
@@ -19,6 +24,11 @@ export const Form = styled.form`
     0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519);
   box-sizing: border-box;
 
+  @media ${DESKTOP} {
+    ${Button} {
+      padding: 16px 48px 15px 49px;
+    }
+  }
   @media ${TABLET} {
     max-width: 427px;
     margin-bottom: 80px;
@@ -26,11 +36,16 @@ export const Form = styled.form`
 
   @media ${MOBILE} {
     margin-bottom: 0;
-  }
 
-  @media ${DESKTOP} {
     ${Button} {
-      padding: 16px 48px 15px 49px;
+      padding-left: 45px;
+      padding-right: 45px;
+    } 
+    @media ${MOBILE_SMALL} {
+
+    ${Button} {
+      padding-left: 24px;
+      padding-right: 24px;
     }
   }
 `;

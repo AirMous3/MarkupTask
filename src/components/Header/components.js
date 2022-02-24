@@ -31,7 +31,7 @@ export const HeaderWrapper = styled.div`
   }
 
   @media ${MOBILE} {
-    padding: 0 20px;
+    padding: 0 13px;
 
     nav {
       display: none;
@@ -60,6 +60,8 @@ export const HeaderWrapper = styled.div`
     ${Button} {
       margin-left: 16px;
       margin-right: 17px;
+      padding-left: 24px;
+      padding-right: 24px;
     }
   }
 `;

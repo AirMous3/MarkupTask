@@ -34,6 +34,9 @@ export const MainContent = styled.div`
   }
 
   @media ${MOBILE} {
+    padding-right: 10px;
+  }
+  @media ${MOBILE_SMALL} {
     padding-left: 40px;
     padding-right: 10px;
   }
@@ -73,6 +76,9 @@ export const ContentOffer = styled.div`
   @media ${TABLET} {
     font-size: 34px;
   }
+  @media ${MOBILE} {
+    max-width: 553px;
+  }
 
   @media ${MOBILE_SMALL} {
     font-size: 48px;
@@ -88,6 +94,9 @@ export const ContentDescription = styled.div`
 
   @media ${TABLET} {
     font-size: 18px;
+  }
+  @media ${MOBILE} {
+    margin-bottom: 48px;
   }
 `;
 
@@ -129,6 +138,10 @@ export const StatDescription = styled.div`
 export const SectionWrapper = styled.section`
   padding-top: 46px;
   padding-bottom: 50px;
+
+  @media ${MOBILE} {
+    padding-top: 60px;
+  }
 `;
 
 export const MainImages = styled.div`
@@ -148,7 +161,7 @@ export const MainImages = styled.div`
   @media ${MOBILE} {
     flex: initial;
     width: 100%;
-    height: 895px;
+    height: 892px;
     background-position: center;
   }
 
