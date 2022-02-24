@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import notificationIcon from "../../assets/icons/notification.svg";
-import { MOBILE, TABLET } from "../../Variables";
+import { HD, MOBILE, TABLET } from "../../Variables";
 
 export const LoginWrapper = styled.div`
   display: flex;
@@ -21,8 +21,8 @@ export const RegisterButton = styled.button`
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  margin-left: 39px;
-  margin-right: 58px;
+  margin-left: 41px;
+  margin-right: 18px;
   border: none;
   background: #215ee9;
   color: white;
@@ -48,4 +48,13 @@ export const NotificationIcon = styled.div`
   width: 20px;
   height: 20px;
   cursor: pointer;
+  margin-right: -39px;
+  margin-left: 39px;
+
+  @media ${HD} {
+    margin: 0;
+  }
+  @media ${TABLET} {
+    margin: 0;
+  }
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TABLET } from "../../Variables";
+import { HD, TABLET } from "../../Variables";
 
 export const UlWrapper = styled.ul`
   display: flex;
@@ -17,6 +17,14 @@ export const UlWrapper = styled.ul`
   }
 
   @media ${TABLET} {
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-left: 18px;
+    }
+  }
+  @media ${HD} {
     padding: 0;
     margin: 0;
 

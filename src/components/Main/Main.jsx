@@ -20,8 +20,8 @@ import { MOBILE, MOBILE_SMALL, TABLET } from "../../Variables";
 const MainImages = styled.div`
   flex: 1;
   height: 901px;
-  background: url("${heroImage}") bottom left, url("${vector6}") 0 0,
-    url("${vector7}") 0 300%;
+  background: url("${heroImage}") 89px -32px, url("${vector6}") 285px 9px,
+    url("${vector7}") 104px 127%;
   background-size: auto;
   background-repeat: no-repeat;
 
@@ -43,6 +43,29 @@ const MainImages = styled.div`
     background-size: cover;
   }
 `;
+
+// const MainImages = styled.div`
+//   position: relative;
+//   width: 100%;
+// `;
+// const HeroImage = styled.img`
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   max-width: 100%;
+// `;
+// const Vector6 = styled.img`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   max-width: 100%;
+// `;
+// const Vector7 = styled.img`
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   max-width: 100%;
+// `;
 
 export const Main = () => {
   return (
@@ -84,6 +107,11 @@ export const Main = () => {
             </div>
           </ContentStats>
         </MainContent>
+        {/*<MainImages>*/}
+        {/*  <Vector6 src={vector6} alt="" />*/}
+        {/*  <Vector7 src={vector7} alt="" />*/}
+        {/*  <HeroImage src={heroImage} alt="" />*/}
+        {/*</MainImages>*/}
         <MainImages></MainImages>
       </MainWrapper>
     </SectionWrapper>

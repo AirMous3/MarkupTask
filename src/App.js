@@ -19,7 +19,7 @@ const AppMain = styled.main`
     padding-left: 40px;
     background-image: url(${topLines}), url(${bottomLines});
     background-repeat: no-repeat;
-    background-position: 79% 7%, 9% 95%;
+    background-position: 81% 7%, 11% 97%;
   }
 
   @media ${TABLET} {

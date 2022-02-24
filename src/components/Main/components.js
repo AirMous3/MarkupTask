@@ -17,7 +17,7 @@ export const MainContent = styled.div`
   color: #215ee9;
 
   @media ${DESKTOP} {
-    margin-top: 100px;
+    margin-top: 52px;
   }
 
   @media ${TABLET} {
