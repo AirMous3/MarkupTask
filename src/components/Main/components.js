@@ -1,5 +1,10 @@
 import styled from "styled-components";
-import { DESKTOP, MOBILE, MOBILE_SMALL, TABLET } from "../../Variables";
+import {
+  DESKTOP,
+  MOBILE,
+  MOBILE_SMALL,
+  TABLET,
+} from "../../constants/Variables";
 import heroImage from "../../assets/images/Hero Image.png";
 import vector6 from "../../assets/images/Vector6.png";
 import vector7 from "../../assets/images/Vector7.png";

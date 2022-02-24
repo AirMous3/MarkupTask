@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DESKTOP, MOBILE, TABLET } from "../../Variables";
+import { DESKTOP, MOBILE, TABLET } from "../../constants/Variables";
 import { Button } from "../ReusableComponents/components";
 
 export const BurgerWrap = styled.button`

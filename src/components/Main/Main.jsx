@@ -8,12 +8,13 @@ import {
   MainImages,
   MainWrapper,
   SectionWrapper,
-  StatDescription,
-  StatNumber,
 } from "./components";
 import { GetStartedForm } from "../GetStartedForm/GetStartedForm";
+import { Stat } from "../Stat/Stat";
+import { useTheme } from "styled-components";
 
 export const Main = () => {
+  const theme = useTheme();
   return (
     <SectionWrapper>
       <MainWrapper>
@@ -33,24 +34,21 @@ export const Main = () => {
           <GetStartedForm />
 
           <ContentStats>
-            <div>
-              <StatNumber>240</StatNumber>
-              <StatDescription>
-                Qualified Doctors & Medical Specialists
-              </StatDescription>
-            </div>
-            <div>
-              <StatNumber color="#215EE9">1.456</StatNumber>
-              <StatDescription>
-                Medical Tests Done For Our Patients
-              </StatDescription>
-            </div>
-            <div>
-              <StatNumber>1M+</StatNumber>
-              <StatDescription>
-                Years of Experience The Medical Field
-              </StatDescription>
-            </div>
+            <Stat
+              number="240"
+              description="Qualified Doctors & Medical Specialists"
+            />
+
+            <Stat
+              number="1.456"
+              description="Medical Tests Done For Our Patients"
+              color={theme.colors.primary}
+            />
+
+            <Stat
+              number="1M+"
+              description="Years of Experience The Medical Field"
+            />
           </ContentStats>
         </MainContent>
 

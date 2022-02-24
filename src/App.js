@@ -4,7 +4,7 @@ import { Header } from "./components/Header/Header";
 import { Main } from "./components/Main/Main";
 import topLines from "./assets/icons/toplines.svg";
 import bottomLines from "./assets/icons/bottomLines.svg";
-import { DESKTOP, MOBILE, TABLET } from "./Variables";
+import { DESKTOP, MOBILE, TABLET } from "./constants/Variables";
 
 export const Container = styled.div`
   max-width: 1372px;

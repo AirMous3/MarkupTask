@@ -18,6 +18,7 @@ export const GetStartedForm = () => {
     <Form onSubmit={onSubmitHandler}>
       <MessageIcon />
       <Input
+        title="Email input"
         type="text"
         placeholder="Enter your email"
         value={email}

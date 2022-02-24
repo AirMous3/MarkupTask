@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import notificationIcon from "../../assets/icons/notification.svg";
-import { HD, MOBILE, TABLET } from "../../Variables";
+import { HD, MOBILE, TABLET } from "../../constants/Variables";
 
 export const LoginWrapper = styled.div`
   display: flex;
