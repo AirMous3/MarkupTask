@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { DESKTOP, MOBILE, MOBILE_SMALL, TABLET } from "../../Variables";
+import heroImage from "../../assets/images/Hero Image.png";
+import vector6 from "../../assets/images/Vector6.png";
+import vector7 from "../../assets/images/Vector7.png";
 
 export const MainWrapper = styled.div`
   display: flex;
@@ -14,7 +17,7 @@ export const MainWrapper = styled.div`
 export const MainContent = styled.div`
   display: flex;
   flex-direction: column;
-  color: #215ee9;
+  color: ${(props) => props.theme.colors.primary};
 
   @media ${DESKTOP} {
     margin-top: 52px;
@@ -45,8 +48,10 @@ export const ContentOffer = styled.div`
   margin-bottom: 30px;
   letter-spacing: -0.01em;
   max-width: 543px;
+
   span {
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -119,4 +124,31 @@ export const StatDescription = styled.div`
 export const SectionWrapper = styled.section`
   padding-top: 46px;
   padding-bottom: 50px;
+`;
+
+export const MainImages = styled.div`
+  flex: 1;
+  height: 901px;
+  background: url("${heroImage}") 89px -32px, url("${vector6}") 285px 9px,
+    url("${vector7}") 104px 127%;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  @media ${TABLET} {
+    max-width: 501px;
+    height: 601px;
+    background-size: cover;
+  }
+
+  @media ${MOBILE} {
+    flex: initial;
+    width: 100%;
+    height: 895px;
+    background-position: center;
+  }
+
+  @media ${MOBILE_SMALL} {
+    height: 750px;
+    background-size: cover;
+  }
 `;

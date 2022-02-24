@@ -8,12 +8,13 @@ export const UlWrapper = styled.ul`
   li {
     margin-left: 46px;
   }
+
   a {
     font-style: normal;
-    color: #7d8790;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
+    color: ${(props) => props.theme.colors.secondary};
   }
 
   @media ${TABLET} {

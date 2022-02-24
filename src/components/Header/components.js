@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { DESKTOP, MOBILE, TABLET } from "../../Variables";
+import { Button } from "../ReusableComponents/components";
 
 export const BurgerWrap = styled.button`
   cursor: pointer;
@@ -46,6 +47,18 @@ export const HeaderWrapper = styled.div`
   @media ${DESKTOP} {
     ${BurgerWrap} {
       display: none;
+    }
+  }
+  @media ${DESKTOP} {
+    ${Button} {
+      margin-left: 41px;
+      margin-right: 18px;
+    }
+  }
+  @media ${TABLET} {
+    ${Button} {
+      margin-left: 16px;
+      margin-right: 17px;
     }
   }
 `;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Form, Input, InputButton, MessageIcon } from "./components";
+import { Form, Input, MessageIcon } from "./components";
+import { Button } from "../ReusableComponents/components";
 
 export const GetStartedForm = () => {
   const [email, setEmail] = useState("");
@@ -23,7 +24,7 @@ export const GetStartedForm = () => {
         required
         onChange={onEmailChange}
       />
-      <InputButton type="submit">Get Started</InputButton>
+      <Button type="submit">Get Started</Button>
     </Form>
   );
 };
