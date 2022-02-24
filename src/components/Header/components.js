@@ -31,7 +31,7 @@ export const HeaderWrapper = styled.div`
   }
 
   @media ${MOBILE} {
-    padding: 0 13px;
+    padding: 0 16px;
 
     nav {
       display: none;

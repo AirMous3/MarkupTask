@@ -25,11 +25,12 @@ export const MainContent = styled.div`
   color: ${(props) => props.theme.colors.primary};
 
   @media ${DESKTOP} {
-    margin-top: 52px;
+    margin-top: 100px;
   }
 
   @media ${TABLET} {
     max-width: 399px;
+    margin-top: 40px;
     padding-left: 30px;
   }
 
@@ -38,7 +39,7 @@ export const MainContent = styled.div`
   }
   @media ${MOBILE_SMALL} {
     padding-left: 40px;
-    padding-right: 10px;
+    padding-right: 40px;
   }
 `;
 
@@ -96,7 +97,7 @@ export const ContentDescription = styled.div`
     font-size: 18px;
   }
   @media ${MOBILE} {
-    margin-bottom: 48px;
+    margin-bottom: 51px;
   }
 `;
 
@@ -136,7 +137,6 @@ export const StatDescription = styled.div`
 `;
 
 export const SectionWrapper = styled.section`
-  padding-top: 46px;
   padding-bottom: 50px;
 
   @media ${MOBILE} {
@@ -146,23 +146,30 @@ export const SectionWrapper = styled.section`
 
 export const MainImages = styled.div`
   flex: 1;
-  height: 901px;
-  background: url("${heroImage}") 89px -32px, url("${vector6}") 285px 9px,
-    url("${vector7}") 104px 127%;
+  height: 998px;
+  background-image: url("${heroImage}"), url("${vector6}"), url("${vector7}");
+  background-position: 92px 13px, 287px 56px, 104px 284px;
   background-size: auto;
   background-repeat: no-repeat;
+  filter: drop-shadow(50px -56px 104px rgba(28, 91, 235, 0.05));
+
+  @media ${DESKTOP} {
+    margin-right: -76px;
+  }
 
   @media ${TABLET} {
     max-width: 501px;
     height: 601px;
-    background-size: cover;
+    background-size: cover, 284px, 422px;
+    background-position: 0 0px, 120px 21px, -3px 188px;
   }
 
   @media ${MOBILE} {
     flex: initial;
     width: 100%;
-    height: 892px;
-    background-position: center;
+    height: 890px;
+    background-position: center, center, -133px 45px;
+    background-size: auto, auto, 919px 1072px;
   }
 
   @media ${MOBILE_SMALL} {

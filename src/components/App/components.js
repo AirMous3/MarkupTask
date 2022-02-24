@@ -10,7 +10,7 @@ export const AppMain = styled.main`
     padding-left: 40px;
     background-image: url(${topLines}), url(${bottomLines});
     background-repeat: no-repeat;
-    background-position: 81% 7%, 11% 97%;
+    background-position: 81% 7%, 11% 91%;
   }
 
   @media ${TABLET} {
@@ -18,6 +18,6 @@ export const AppMain = styled.main`
   }
 
   @media ${MOBILE} {
-    padding-top: 23px;
+    padding-top: 24px;
   }
 `;

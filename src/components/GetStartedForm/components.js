@@ -40,9 +40,9 @@ export const Form = styled.form`
     ${Button} {
       padding-left: 45px;
       padding-right: 45px;
-    } 
-    @media ${MOBILE_SMALL} {
-
+    }
+  }
+  @media ${MOBILE_SMALL} {
     ${Button} {
       padding-left: 24px;
       padding-right: 24px;

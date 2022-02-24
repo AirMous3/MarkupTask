@@ -7,13 +7,13 @@ export const UlWrapper = styled.ul`
 
   li {
     margin-left: 46px;
+  }
 
-    &:first-child a {
-      position: relative;
-      color: ${(props) => props.theme.colors.primary};
-    }
+  li:first-child a {
+    position: relative;
+    color: ${(props) => props.theme.colors.primary};
 
-    &:first-child a::after {
+    &::after {
       content: "";
       display: block;
       width: 7px;
