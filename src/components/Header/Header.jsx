@@ -2,19 +2,27 @@ import React from "react";
 import { Navbar } from "../Navbar/Navbar";
 import { Title } from "../Title/Title";
 import { Login } from "../Login/Login";
-import { Container } from "../../App";
-import { HeaderWrapper } from "./components";
+import { BurgerBar, BurgerWrap, HeaderWrapper } from "./components";
+
+const Burger = () => {
+  return (
+    <BurgerWrap title="Open menu">
+      <BurgerBar />
+      <BurgerBar />
+      <BurgerBar />
+    </BurgerWrap>
+  );
+};
 
 export const Header = () => {
   return (
     <header>
-      <Container>
-        <HeaderWrapper>
-          <Title />
-          <Navbar />
-          <Login />
-        </HeaderWrapper>
-      </Container>
+      <HeaderWrapper>
+        <Title />
+        <Navbar />
+        <Login />
+        <Burger />
+      </HeaderWrapper>
     </header>
   );
 };

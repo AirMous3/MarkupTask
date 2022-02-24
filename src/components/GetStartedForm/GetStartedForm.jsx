@@ -20,6 +20,7 @@ export const GetStartedForm = () => {
         type="text"
         placeholder="Enter your email"
         value={email}
+        required
         onChange={onEmailChange}
       />
       <InputButton type="submit">Get Started</InputButton>

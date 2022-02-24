@@ -3,26 +3,41 @@ import styled from "styled-components";
 import { Header } from "./components/Header/Header";
 import { Main } from "./components/Main/Main";
 import topLines from "./assets/icons/toplines.svg";
+import bottomLines from "./assets/icons/bottomLines.svg";
+import { DESKTOP, MOBILE, TABLET } from "./Variables";
 
 export const Container = styled.div`
   max-width: 1372px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
 `;
 
 const AppMain = styled.main`
   padding-top: 150px;
-  background-image: url(${topLines});
-  background-repeat: no-repeat;
-  background-position: 79% 7%;
+
+  @media ${DESKTOP} {
+    padding-left: 40px;
+    background-image: url(${topLines}), url(${bottomLines});
+    background-repeat: no-repeat;
+    background-position: 79% 7%, 9% 95%;
+  }
+
+  @media ${TABLET} {
+    padding-top: 40px;
+  }
+
+  @media ${MOBILE} {
+    padding-top: 20px;
+  }
 `;
 export const App = () => {
   return (
     <>
       <AppMain>
-        <Header />
-        <Main />
+        <Container>
+          <Header />
+          <Main />
+        </Container>
       </AppMain>
     </>
   );

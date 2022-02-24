@@ -1,16 +1,34 @@
 import styled from "styled-components";
-import lines from "../../assets/icons/bottomLines.svg";
+import { DESKTOP, MOBILE, MOBILE_SMALL, TABLET } from "../../Variables";
 
 export const MainWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media ${MOBILE} {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 `;
 
 export const MainContent = styled.div`
   display: flex;
   flex-direction: column;
   color: #215ee9;
-  margin-top: 100px;
+
+  @media ${DESKTOP} {
+    margin-top: 100px;
+  }
+
+  @media ${TABLET} {
+    max-width: 399px;
+    padding-left: 30px;
+  }
+
+  @media ${MOBILE} {
+    padding-left: 40px;
+    padding-right: 10px;
+  }
 `;
 
 export const ContentTitle = styled.div`
@@ -26,8 +44,7 @@ export const ContentOffer = styled.div`
   margin-top: 19px;
   margin-bottom: 30px;
   letter-spacing: -0.01em;
-  width: 543px;
-  height: 198px;
+  max-width: 543px;
   span {
     position: relative;
     &::after {
@@ -42,22 +59,36 @@ export const ContentOffer = styled.div`
       z-index: -1;
     }
   }
+
+  @media ${TABLET} {
+    font-size: 34px;
+  }
+
+  @media ${MOBILE_SMALL} {
+    font-size: 48px;
+  }
 `;
 
 export const ContentDescription = styled.div`
   font-size: 20px;
   line-height: 30px;
-  font-weight: 400;
-  width: 520px;
-  height: 90px;
+  max-width: 520px;
   opacity: 0.7;
   margin-bottom: 50px;
+
+  @media ${TABLET} {
+    font-size: 18px;
+  }
 `;
 
 export const ContentStats = styled.div`
   display: flex;
   justify-content: space-between;
   margin-right: -25px;
+
+  @media ${MOBILE} {
+    display: none;
+  }
 `;
 
 export const StatNumber = styled.div`
@@ -67,6 +98,10 @@ export const StatNumber = styled.div`
   letter-spacing: -4px;
   color: ${(props) => props.color || "black"};
   margin-bottom: 13px;
+
+  @media ${TABLET} {
+    font-size: 34px;
+  }
 `;
 
 export const StatDescription = styled.div`
@@ -75,11 +110,13 @@ export const StatDescription = styled.div`
   height: 50px;
   font-size: 16px;
   line-height: 24px;
+
+  @media ${TABLET} {
+    font-size: 14px;
+  }
 `;
 
 export const SectionWrapper = styled.section`
-  background-image: url(${lines});
-  background-repeat: no-repeat no-repeat;
-  background-position: 9% 95%;
+  padding-top: 46px;
   padding-bottom: 50px;
 `;
