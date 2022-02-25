@@ -8,6 +8,7 @@ import {
 import heroImage from "../../assets/images/Hero Image.png";
 import vector6 from "../../assets/images/Vector6.png";
 import vector7 from "../../assets/images/Vector7.png";
+import vector8 from "../../assets/images/Vector8.png";
 
 export const MainWrapper = styled.div`
   display: flex;
@@ -168,8 +169,16 @@ export const MainImages = styled.div`
     flex: initial;
     width: 100%;
     height: 890px;
-    background-position: center, center, -133px 45px;
-    background-size: auto, auto, 919px 1072px;
+    background-image: url("${heroImage}"), url("${vector6}"), url("${vector8}");
+    background-position: center, center, -34px 33px;
+    background-size: auto, auto, 669px 860px;
+  }
+
+  @media (min-width: 643px) and (max-width: 768px) {
+    background-image: url("${heroImage}"), url("${vector6}"), url("${vector7}");
+    background-position: 92px 13px, 287px 56px, 104px 284px;
+    background-size: auto;
+    background-repeat: no-repeat;
   }
 
   @media ${MOBILE_SMALL} {
