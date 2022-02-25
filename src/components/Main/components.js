@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import {
-  DESKTOP,
-  MOBILE,
-  MOBILE_SMALL,
-  TABLET,
+    DESKTOP,
+    MOBILE,
+    MOBILE_SMALL,
+    TABLET,
 } from "../../constants/Variables";
 import heroImage from "../../assets/images/Hero Image.png";
 import vector6 from "../../assets/images/Vector6.png";
@@ -50,7 +50,7 @@ export const ContentTitle = styled.div`
   line-height: 24px;
 `;
 
-export const ContentOffer = styled.div`
+export const ContentOffer = styled.h2`
   font-size: 65px;
   font-weight: 700;
   line-height: 101.8%;
@@ -117,13 +117,16 @@ export const StatNumber = styled.div`
   font-size: 56px;
   line-height: 66px;
   letter-spacing: -4px;
-  color: ${(props) => props.color || "black"};
+  color: black;
   margin-bottom: 13px;
 
   @media ${TABLET} {
     font-size: 34px;
   }
 `;
+export const StatNumberAccent = styled(StatNumber)`
+  color: #215EE9;
+`
 
 export const StatDescription = styled.div`
   color: black;

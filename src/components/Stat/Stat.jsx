@@ -1,11 +1,15 @@
-import { StatDescription, StatNumber } from "../Main/components";
+import {StatDescription, StatNumber, StatNumberAccent} from "../Main/components";
 import React from "react";
 
-export const Stat = ({ number, description, color }) => {
-  return (
-    <div>
-      <StatNumber color={color}>{number}</StatNumber>
-      <StatDescription>{description}</StatDescription>
-    </div>
-  );
+export const Stat = ({number, description, accent}) => {
+    return (
+        <div>
+            {
+                accent ?
+                    <StatNumberAccent>{number}</StatNumberAccent> :
+                    <StatNumber>{number}</StatNumber>}
+
+            <StatDescription>{description}</StatDescription>
+        </div>
+    );
 };

@@ -9,7 +9,8 @@ export const BurgerWrap = styled.button`
   background: none;
 `;
 
-export const BurgerBar = styled.div`
+export const BurgerBar = styled.span`
+  display: block;
   width: 28px;
   height: 4px;
   border-radius: 5px;

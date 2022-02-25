@@ -42,7 +42,7 @@ export const Main = () => {
             <Stat
               number="1.456"
               description="Medical Tests Done For Our Patients"
-              color={theme.colors.primary}
+              accent
             />
 
             <Stat
