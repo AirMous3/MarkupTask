@@ -5,7 +5,7 @@ import { Container } from "../ReusableComponents/components";
 import { AppMain } from "./components";
 
 export const App = () => {
-  // some changes
+  // some changes added
   return (
     <AppMain>
       <Container>
