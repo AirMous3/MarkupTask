@@ -8,6 +8,13 @@
     "document": false
   },
   "settings": {
+    "import/resolver": {
+      "allias": {
+        "map": [
+          ["@", "src"]
+        ]
+      }
+    },
     "extensions": [
       ".js",
       ".jsx",
@@ -15,10 +22,7 @@
     ]
   },
   "rules": {
-    "import/extensions": "off",
-    "import/no-unresolved": "off",
     "react/prop-types": "off",
     "import/prefer-default-export": "off"
-
   }
 }
