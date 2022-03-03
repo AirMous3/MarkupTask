@@ -1,14 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import heroImage from '@/assets/images/Hero Image.png';
+import vector6 from '@/assets/images/Vector6.png';
+import vector7 from '@/assets/images/Vector7.png';
+import vector8 from '@/assets/images/Vector8.png';
 import {
-    DESKTOP,
-    MOBILE,
-    MOBILE_SMALL,
-    TABLET,
-} from "../../constants/Variables";
-import heroImage from "../../assets/images/Hero Image.png";
-import vector6 from "../../assets/images/Vector6.png";
-import vector7 from "../../assets/images/Vector7.png";
-import vector8 from "../../assets/images/Vector8.png";
+  DESKTOP, MOBILE, MOBILE_SMALL, TABLET,
+} from '@/constants/Variables';
 
 export const MainWrapper = styled.div`
   display: flex;
@@ -109,34 +106,6 @@ export const ContentStats = styled.div`
 
   @media ${MOBILE} {
     display: none;
-  }
-`;
-
-export const StatNumber = styled.div`
-  font-weight: bold;
-  font-size: 56px;
-  line-height: 66px;
-  letter-spacing: -4px;
-  color: black;
-  margin-bottom: 13px;
-
-  @media ${TABLET} {
-    font-size: 34px;
-  }
-`;
-export const StatNumberAccent = styled(StatNumber)`
-  color: #215EE9;
-`
-
-export const StatDescription = styled.div`
-  color: black;
-  width: 141px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 24px;
-
-  @media ${TABLET} {
-    font-size: 14px;
   }
 `;
 

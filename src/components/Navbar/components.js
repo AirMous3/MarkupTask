@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { HD, TABLET } from "../../constants/Variables";
+import styled from 'styled-components';
+import { HD, TABLET } from '@/constants/Variables';
 
 export const UlWrapper = styled.ul`
   display: flex;

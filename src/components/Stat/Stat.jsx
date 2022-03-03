@@ -1,15 +1,19 @@
-import {StatDescription, StatNumber, StatNumberAccent} from "../Main/components";
-import React from "react";
+import React from 'react';
+import { statComponents } from '@/components/Stat';
 
-export const Stat = ({number, description, accent}) => {
-    return (
-        <div>
-            {
-                accent ?
-                    <StatNumberAccent>{number}</StatNumberAccent> :
-                    <StatNumber>{number}</StatNumber>}
+const { StatNumberAccent, StatNumber, StatDescription } = statComponents;
 
-            <StatDescription>{description}</StatDescription>
-        </div>
-    );
-};
+function Stat({ number, description, accent }) {
+  return (
+    <div>
+      {accent ? (
+        <StatNumberAccent>{number}</StatNumberAccent>
+      ) : (
+        <StatNumber>{number}</StatNumber>
+      )}
+
+      <StatDescription>{description}</StatDescription>
+    </div>
+  );
+}
+export default Stat;

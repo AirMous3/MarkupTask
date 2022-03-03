@@ -1,12 +1,12 @@
-import { createGlobalStyle } from "styled-components";
-import robotoBoldWoff2 from "./assets/fonts/Roboto-Bold.woff2";
-import robotoBoldWoff from "./assets/fonts/Roboto-Bold.woff";
-import robotoBoldTtf from "./assets/fonts/Roboto-Bold.ttf";
-import robotoRegularWoff2 from "./assets/fonts/Roboto-Regular.woff2";
-import robotoRegularWoff from "./assets/fonts/Roboto-Regular.woff";
-import robotoRegularTtf from "./assets/fonts/Roboto-Regular.ttf";
+import { createGlobalStyle } from 'styled-components';
+import robotoBoldTtf from './assets/fonts/Roboto-Bold.ttf';
+import robotoBoldWoff from './assets/fonts/Roboto-Bold.woff';
+import robotoBoldWoff2 from './assets/fonts/Roboto-Bold.woff2';
+import robotoRegularTtf from './assets/fonts/Roboto-Regular.ttf';
+import robotoRegularWoff from './assets/fonts/Roboto-Regular.woff';
+import robotoRegularWoff2 from './assets/fonts/Roboto-Regular.woff2';
 
-export const Global = createGlobalStyle`
+const Global = createGlobalStyle`
   @font-face {
     font-family: 'Roboto';
     src: url(${robotoBoldWoff2}) format('woff2'),
@@ -43,3 +43,4 @@ export const Global = createGlobalStyle`
     list-style-type: none;
   }
 `;
+export default Global;

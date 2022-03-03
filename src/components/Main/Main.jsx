@@ -1,58 +1,62 @@
-import React from "react";
-import {
-    ContentDescription,
-    ContentOffer,
-    ContentStats,
-    ContentTitle,
-    MainContent,
-    MainImages,
-    MainWrapper,
-    SectionWrapper,
-} from "./components";
-import {GetStartedForm} from "../GetStartedForm/GetStartedForm";
-import {Stat} from "../Stat/Stat";
+import React from 'react';
+import { GetStartedForm } from '@/components/GetStartedForm';
+import { mainComponents } from '@/components/Main';
+import { Stat } from '@/components/Stat';
 
-export const Main = () => {
-    return (
-        <SectionWrapper>
-            <MainWrapper>
-                <MainContent>
-                    <ContentTitle>Booking of doctor’s appointment</ContentTitle>
+const {
+  MainContent,
+  MainImages,
+  MainWrapper,
+  SectionWrapper,
+  ContentOffer,
+  ContentStats,
+  ContentTitle,
+  ContentDescription,
+} = mainComponents;
 
-                    <ContentOffer>
-                        Don’t Miss Our Exclusive Patient <span>Special</span>
-                    </ContentOffer>
+function Main() {
+  return (
+    <SectionWrapper>
+      <MainWrapper>
+        <MainContent>
+          <ContentTitle>Booking of doctor’s appointment</ContentTitle>
 
-                    <ContentDescription>
-                        We want to make sure that everyone has access to natural and
-                        effective care. With our special, you’ll receive a consultation
-                        and
-                        a digital posture assesment.
-                    </ContentDescription>
+          <ContentOffer>
+            Don’t Miss Our Exclusive Patient
+            <span>Special</span>
+          </ContentOffer>
 
-                    <GetStartedForm/>
+          <ContentDescription>
+            We want to make sure that everyone has access to natural and
+            effective care. With our special, you’ll receive a consultation and
+            a digital posture assesment.
+          </ContentDescription>
 
-                    <ContentStats>
-                        <Stat
-                            number="240"
-                            description="Qualified Doctors & Medical Specialists"
-                        />
+          <GetStartedForm />
 
-                        <Stat
-                            number="1.456"
-                            description="Medical Tests Done For Our Patients"
-                            accent
-                        />
+          <ContentStats>
+            <Stat
+              number="240"
+              description="Qualified Doctors & Medical Specialists"
+            />
 
-                        <Stat
-                            number="1M+"
-                            description="Years of Experience The Medical Field"
-                        />
-                    </ContentStats>
-                </MainContent>
+            <Stat
+              number="1.456"
+              description="Medical Tests Done For Our Patients"
+              accent
+            />
 
-                <MainImages/>
-            </MainWrapper>
-        </SectionWrapper>
-    );
-};
+            <Stat
+              number="1M+"
+              description="Years of Experience The Medical Field"
+            />
+          </ContentStats>
+        </MainContent>
+
+        <MainImages />
+      </MainWrapper>
+    </SectionWrapper>
+  );
+}
+
+export default Main;

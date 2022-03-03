@@ -1,7 +1,9 @@
-import React from "react";
-import { UlWrapper } from "./components";
+import React from 'react';
+import { navBarComponents } from '@/components/Navbar';
 
-export const Navbar = () => {
+const { UlWrapper } = navBarComponents;
+
+function Navbar() {
   return (
     <nav>
       <UlWrapper>
@@ -23,4 +25,5 @@ export const Navbar = () => {
       </UlWrapper>
     </nav>
   );
-};
+}
+export default Navbar;

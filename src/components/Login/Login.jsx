@@ -1,8 +1,11 @@
-import React from "react";
-import { LoginWrapper, NotificationIcon } from "./components";
-import { Button } from "../ReusableComponents/components";
+import React from 'react';
+import { loginComponents } from '@/components/Login';
+import { reusableComponents } from '@/components/ReusableComponents';
 
-export const Login = () => {
+const { LoginWrapper, NotificationIcon } = loginComponents;
+const { Button } = reusableComponents;
+
+function Login() {
   return (
     <LoginWrapper>
       <a href="#login">Log In</a>
@@ -10,4 +13,6 @@ export const Login = () => {
       <NotificationIcon />
     </LoginWrapper>
   );
-};
+}
+
+export default Login;

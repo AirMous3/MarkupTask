@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { DESKTOP, MOBILE, TABLET } from "../../constants/Variables";
-import { Button } from "../ReusableComponents/components";
+import styled from 'styled-components';
+import { Button } from '@/components/ReusableComponents/components';
+import { DESKTOP, MOBILE, TABLET } from '@/constants/Variables';
 
 export const BurgerWrap = styled.button`
   cursor: pointer;

@@ -1,10 +1,12 @@
-import React from "react";
-import { Navbar } from "../Navbar/Navbar";
-import { Title } from "../Title/Title";
-import { Login } from "../Login/Login";
-import { BurgerBar, BurgerWrap, HeaderWrapper } from "./components";
+import React from 'react';
+import { headerComponents } from '@/components/Header';
+import { Title } from '@/components/Title';
+import { Navbar } from '@/components/Navbar';
+import { Login } from '@/components/Login';
 
-const Burger = () => {
+const { BurgerWrap, HeaderWrapper, BurgerBar } = headerComponents;
+
+function Burger() {
   return (
     <BurgerWrap title="Open menu">
       <BurgerBar />
@@ -12,9 +14,9 @@ const Burger = () => {
       <BurgerBar />
     </BurgerWrap>
   );
-};
+}
 
-export const Header = () => {
+function Header() {
   return (
     <header>
       <HeaderWrapper>
@@ -25,4 +27,6 @@ export const Header = () => {
       </HeaderWrapper>
     </header>
   );
-};
+}
+
+export default Header;

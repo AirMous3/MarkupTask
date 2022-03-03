@@ -1,0 +1,24 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "document": false
+  },
+  "settings": {
+    "extensions": [
+      ".js",
+      ".jsx",
+      ".json"
+    ]
+  },
+  "rules": {
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "react/prop-types": "off",
+    "import/prefer-default-export": "off"
+
+  }
+}

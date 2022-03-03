@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import windIcon from "../../assets/icons/wind.svg";
-import { MOBILE } from "../../constants/Variables";
+import styled from 'styled-components';
+import windIcon from '@/assets/icons/wind.svg';
+import { MOBILE } from '@/constants/Variables';
 
 export const TitleIcon = styled.div`
   background-image: url(${windIcon});

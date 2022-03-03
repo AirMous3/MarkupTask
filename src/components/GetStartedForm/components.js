@@ -1,12 +1,11 @@
-import styled from "styled-components";
-import union from "../../assets/icons/Union.svg";
+import styled from 'styled-components';
+import union from '@/assets/icons/Union.svg';
+import { reusableComponents } from '@/components/ReusableComponents';
 import {
-  DESKTOP,
-  MOBILE,
-  MOBILE_SMALL,
-  TABLET,
-} from "../../constants/Variables";
-import { Button } from "../ReusableComponents/components";
+  DESKTOP, MOBILE, MOBILE_SMALL, TABLET,
+} from '@/constants/Variables';
+
+const { Button } = reusableComponents;
 
 export const Form = styled.form`
   display: flex;

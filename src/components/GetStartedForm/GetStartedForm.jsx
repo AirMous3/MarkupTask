@@ -1,14 +1,17 @@
-import React, { useState } from "react";
-import { Form, Input, MessageIcon } from "./components";
-import { Button } from "../ReusableComponents/components";
+import React, { useState } from 'react';
+import { getStartedFormComponents } from '@/components/GetStartedForm';
+import { reusableComponents } from '@/components/ReusableComponents';
 
-export const GetStartedForm = () => {
-  const [email, setEmail] = useState("");
+const { Form, Input, MessageIcon } = getStartedFormComponents;
+const { Button } = reusableComponents;
+
+function GetStartedForm() {
+  const [email, setEmail] = useState('');
 
   const onSubmitHandler = (e) => {
     alert(email);
     e.preventDefault();
-    setEmail("");
+    setEmail('');
   };
   const onEmailChange = (e) => {
     setEmail(e.currentTarget.value);
@@ -28,4 +31,6 @@ export const GetStartedForm = () => {
       <Button type="submit">Get Started</Button>
     </Form>
   );
-};
+}
+
+export default GetStartedForm;
