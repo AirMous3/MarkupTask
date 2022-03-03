@@ -6,7 +6,6 @@ export const GetStartedForm = React.memo(() => {
   const [email, setEmail] = useState('');
 
   const onSubmitHandler = useCallback((e) => {
-    alert(email);
     e.preventDefault();
     setEmail('');
   }, []);
