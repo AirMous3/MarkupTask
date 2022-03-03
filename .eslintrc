@@ -13,7 +13,16 @@
         "map": [["@", "./src"]],
         "extensions": [".js", ".jsx"]
       }
-    }
+    },
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "parent", "sibling", "index"],
+        "pathGroups": [
+          { "pattern": "@/**", "group": "external" }
+        ]
+      }
+    ]
   },
   "rules": {
     "react/prop-types": "off",
