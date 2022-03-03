@@ -1,9 +1,7 @@
 import React from 'react';
-import { statComponents } from '@/components/Stat';
+import { StatNumberAccent, StatNumber, StatDescription } from './components';
 
-const { StatNumberAccent, StatNumber, StatDescription } = statComponents;
-
-const Stat = React.memo(({ number, description, accent }) => (
+export const Stat = React.memo(({ number, description, accent }) => (
   <div>
     {accent ? (
       <StatNumberAccent>{number}</StatNumberAccent>
@@ -14,5 +12,3 @@ const Stat = React.memo(({ number, description, accent }) => (
     <StatDescription>{description}</StatDescription>
   </div>
 ));
-
-export default Stat;

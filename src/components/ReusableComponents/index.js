@@ -1,3 +1,1 @@
-import * as reusableComponents from './components';
-
-export { reusableComponents };
+export * from './components';

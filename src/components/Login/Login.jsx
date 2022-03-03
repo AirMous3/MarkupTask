@@ -1,16 +1,11 @@
 import React from 'react';
-import { loginComponents } from '@/components/Login';
-import { reusableComponents } from '@/components/ReusableComponents';
+import { Button } from '@/components/ReusableComponents';
+import { LoginWrapper, NotificationIcon } from './components';
 
-const { LoginWrapper, NotificationIcon } = loginComponents;
-const { Button } = reusableComponents;
-
-const Login = React.memo(() => (
+export const Login = React.memo(() => (
   <LoginWrapper>
     <a href="#login">Log In</a>
     <Button>Register</Button>
     <NotificationIcon />
   </LoginWrapper>
 ));
-
-export default Login;

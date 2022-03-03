@@ -9,17 +9,11 @@
   },
   "settings": {
     "import/resolver": {
-      "allias": {
-        "map": [
-          ["@", "src"]
-        ]
+      "alias": {
+        "map": [["@", "./src"]],
+        "extensions": [".js", ".jsx"]
       }
-    },
-    "extensions": [
-      ".js",
-      ".jsx",
-      ".json"
-    ]
+    }
   },
   "rules": {
     "react/prop-types": "off",

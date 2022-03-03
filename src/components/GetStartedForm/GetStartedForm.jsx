@@ -1,11 +1,8 @@
 import React, { useCallback, useState } from 'react';
-import { getStartedFormComponents } from '@/components/GetStartedForm';
-import { reusableComponents } from '@/components/ReusableComponents';
+import { Button } from '@/components/ReusableComponents';
+import { Form, Input, MessageIcon } from './components';
 
-const { Form, Input, MessageIcon } = getStartedFormComponents;
-const { Button } = reusableComponents;
-
-const GetStartedForm = React.memo(() => {
+export const GetStartedForm = React.memo(() => {
   const [email, setEmail] = useState('');
 
   const onSubmitHandler = useCallback((e) => {
@@ -33,5 +30,3 @@ const GetStartedForm = React.memo(() => {
     </Form>
   );
 });
-
-export default GetStartedForm;

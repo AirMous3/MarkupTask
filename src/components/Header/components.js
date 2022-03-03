@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { Button } from '@/components/ReusableComponents/components';
 import { DESKTOP, MOBILE, TABLET } from '@/constants/Variables';
-import { burgerComponents } from '@/components/Burger';
+import { Burger } from '@/components/Burger';
 
-const { BurgerWrap } = burgerComponents;
+export const StyledBurger = styled(Burger)``;
 
 export const HeaderWrapper = styled.div`
   display: flex;
@@ -24,13 +24,13 @@ export const HeaderWrapper = styled.div`
   }
 
   @media ${TABLET} {
-    ${BurgerWrap} {
+    ${StyledBurger} {
       display: none;
     }
   }
 
   @media ${DESKTOP} {
-    ${BurgerWrap} {
+    ${StyledBurger} {
       display: none;
     }
   }

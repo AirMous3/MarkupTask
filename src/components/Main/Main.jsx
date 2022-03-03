@@ -1,9 +1,7 @@
 import React from 'react';
 import { GetStartedForm } from '@/components/GetStartedForm';
-import { mainComponents } from '@/components/Main';
 import { Stat } from '@/components/Stat';
-
-const {
+import {
   MainContent,
   MainImages,
   MainWrapper,
@@ -12,9 +10,9 @@ const {
   ContentStats,
   ContentTitle,
   ContentDescription,
-} = mainComponents;
+} from './components';
 
-const Main = React.memo(() => (
+export const Main = React.memo(() => (
   <SectionWrapper>
     <MainWrapper>
       <MainContent>
@@ -45,5 +43,3 @@ const Main = React.memo(() => (
     </MainWrapper>
   </SectionWrapper>
 ));
-
-export default Main;

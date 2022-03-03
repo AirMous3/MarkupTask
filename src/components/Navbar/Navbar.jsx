@@ -1,9 +1,7 @@
 import React from 'react';
-import { navBarComponents } from '@/components/Navbar';
+import { UlWrapper } from './components';
 
-const { UlWrapper } = navBarComponents;
-
-const Navbar = React.memo(() => (
+export const Navbar = React.memo(() => (
   <nav>
     <UlWrapper>
       <li>
@@ -24,5 +22,3 @@ const Navbar = React.memo(() => (
     </UlWrapper>
   </nav>
 ));
-
-export default Navbar;

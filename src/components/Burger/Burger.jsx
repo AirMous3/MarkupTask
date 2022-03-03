@@ -1,10 +1,8 @@
 import React from 'react';
-import { burgerComponents } from '@/components/Burger';
+import { BurgerWrap, BurgerBar } from './components';
 
-const { BurgerWrap, BurgerBar } = burgerComponents;
-
-export const Burger = React.memo(() => (
-  <BurgerWrap title="Open menu">
+export const Burger = React.memo(({ className }) => (
+  <BurgerWrap className={className} title="Open menu">
     <BurgerBar />
     <BurgerBar />
     <BurgerBar />
