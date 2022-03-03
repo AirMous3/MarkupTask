@@ -3,16 +3,9 @@ import { headerComponents } from '@/components/Header';
 import { Title } from '@/components/Title';
 import { Navbar } from '@/components/Navbar';
 import { Login } from '@/components/Login';
+import { Burger } from '@/components/Burger';
 
-const { BurgerWrap, HeaderWrapper, BurgerBar } = headerComponents;
-
-const Burger = React.memo(() => (
-  <BurgerWrap title="Open menu">
-    <BurgerBar />
-    <BurgerBar />
-    <BurgerBar />
-  </BurgerWrap>
-));
+const { HeaderWrapper } = headerComponents;
 
 const Header = React.memo(() => (
   <header>
