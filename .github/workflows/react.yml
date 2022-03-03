@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - fix-ci
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
