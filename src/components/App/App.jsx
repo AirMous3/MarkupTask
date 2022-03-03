@@ -8,14 +8,13 @@ import { reusableComponents } from '@/components/ReusableComponents';
 const { AppMain } = appComponents;
 const { Container } = reusableComponents;
 
-function App() {
-  return (
-    <AppMain>
-      <Container>
-        <Header />
-        <Main />
-      </Container>
-    </AppMain>
-  );
-}
+const App = React.memo(() => (
+  <AppMain>
+    <Container>
+      <Header />
+      <Main />
+    </Container>
+  </AppMain>
+));
+
 export default App;

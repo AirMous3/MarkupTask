@@ -5,14 +5,12 @@ import { reusableComponents } from '@/components/ReusableComponents';
 const { LoginWrapper, NotificationIcon } = loginComponents;
 const { Button } = reusableComponents;
 
-function Login() {
-  return (
-    <LoginWrapper>
-      <a href="#login">Log In</a>
-      <Button>Register</Button>
-      <NotificationIcon />
-    </LoginWrapper>
-  );
-}
+const Login = React.memo(() => (
+  <LoginWrapper>
+    <a href="#login">Log In</a>
+    <Button>Register</Button>
+    <NotificationIcon />
+  </LoginWrapper>
+));
 
 export default Login;
