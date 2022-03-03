@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
 import { App } from '@/components/App';
-import Global from '@/GlobalComponent';
+import Global from './GlobalComponent';
 
 const theme = {
   colors: {

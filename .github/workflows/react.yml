@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - fix-ci
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
@@ -13,8 +14,8 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          npm i
-          npm run build
+          yarn install
+          yarn run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
