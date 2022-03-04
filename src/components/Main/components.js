@@ -42,15 +42,15 @@ export const MainContent = styled.div`
 `;
 
 export const ContentTitle = styled.div`
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
+  font-size: ${(props) => props.theme.fontSizes[0]};
+  font-weight: ${(props) => props.theme.fontWeights.bold};
+  line-height: ${(props) => props.theme.lineHeights[2]};
 `;
 
 export const ContentOffer = styled.h2`
-  font-size: 65px;
-  font-weight: 700;
-  line-height: 101.8%;
+  font-size: ${(props) => props.theme.fontSizes[4]};
+  font-weight: ${(props) => props.theme.fontWeights.bold};
+  line-height: ${(props) => props.theme.lineHeights[4]};
   margin-top: 19px;
   margin-bottom: 30px;
   letter-spacing: -0.01em;
@@ -85,8 +85,8 @@ export const ContentOffer = styled.h2`
 `;
 
 export const ContentDescription = styled.div`
-  font-size: 20px;
-  line-height: 30px;
+  font-size: ${(props) => props.theme.fontSizes[2]};
+  line-height: ${(props) => props.theme.lineHeights[3]};
   max-width: 520px;
   opacity: 0.7;
   margin-bottom: 53px;

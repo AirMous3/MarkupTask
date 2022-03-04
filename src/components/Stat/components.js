@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { TABLET } from '@/constants/Variables';
 
 export const StatNumber = styled.div`
-  font-weight: bold;
-  font-size: 56px;
-  line-height: 66px;
+  font-weight: ${(props) => props.theme.fontWeights.bold};
+  font-size: ${(props) => props.theme.fontSizes[3]};
+  line-height: ${(props) => props.theme.lineHeights[4]};
   letter-spacing: -4px;
   color: black;
   margin-bottom: 13px;
@@ -14,15 +14,15 @@ export const StatNumber = styled.div`
   }
 `;
 export const StatNumberAccent = styled(StatNumber)`
-  color: #215ee9;
+  color: ${(props) => props.theme.colors.primary};
 `;
 
 export const StatDescription = styled.div`
   color: black;
   width: 141px;
   height: 50px;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: ${(props) => props.theme.fontSizes[1]};
+  line-height: ${(props) => props.theme.lineHeights[2]};
 
   @media ${TABLET} {
     font-size: 14px;

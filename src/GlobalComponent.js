@@ -30,7 +30,7 @@ const Global = createGlobalStyle`
   body {
     margin: 0;
     font-family: Roboto, sans-serif, serif, monospace;
-    background-color: #EBF1FF;
+    background-color: ${(props) => props.theme.colors.background};
   }
 
 

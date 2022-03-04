@@ -13,9 +13,9 @@ export const TitleWrapper = styled.div`
 `;
 export const TitleText = styled.div`
   margin-left: 13px;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: bold;
+  font-size: ${(props) => props.theme.fontSizes[1]};
+  line-height: ${(props) => props.theme.lineHeights[2]};
+  font-weight: ${(props) => props.theme.fontWeights.bold};
 
   @media ${MOBILE} {
     margin-left: 9px;

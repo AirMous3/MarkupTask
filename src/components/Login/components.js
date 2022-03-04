@@ -7,9 +7,9 @@ export const LoginWrapper = styled.div`
   align-items: center;
 
   a {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
+    font-weight: ${(props) => props.theme.fontWeights.bold};
+    font-size: ${(props) => props.theme.fontSizes[1]};
+    line-height: ${(props) => props.theme.lineHeights[0]};
     color: ${(props) => props.theme.colors.secondary};
   }
 

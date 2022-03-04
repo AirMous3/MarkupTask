@@ -20,6 +20,7 @@ export const Main = React.memo(() => (
 
         <ContentOffer>
           Don’t Miss Our Exclusive Patient
+          {' '}
           <span>Special</span>
         </ContentOffer>
 

@@ -29,8 +29,8 @@ export const UlWrapper = styled.ul`
   a {
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: ${(props) => props.theme.fontSizes[1]};
+    line-height: ${(props) => props.theme.lineHeights[0]};
     color: ${(props) => props.theme.colors.secondary};
   }
 
