@@ -14,7 +14,7 @@ export const UlWrapper = styled.ul`
     color: ${(props) => props.theme.colors.primary};
 
     &::after {
-      content: "";
+      content: '';
       display: block;
       width: 7px;
       height: 7px;

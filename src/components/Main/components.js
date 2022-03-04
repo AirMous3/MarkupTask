@@ -60,7 +60,7 @@ export const ContentOffer = styled.h2`
     position: relative;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 0;
       left: 0;
@@ -120,7 +120,7 @@ export const SectionWrapper = styled.section`
 export const MainImages = styled.div`
   flex: 1;
   height: 998px;
-  background-image: url("${heroImage}"), url("${vector6}"), url("${vector7}");
+  background-image: url('${heroImage}'), url('${vector6}'), url('${vector7}');
   background-position: 92px 13px, 287px 56px, 104px 284px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -141,13 +141,13 @@ export const MainImages = styled.div`
     flex: initial;
     width: 100%;
     height: 890px;
-    background-image: url("${heroImage}"), url("${vector6}"), url("${vector8}");
+    background-image: url('${heroImage}'), url('${vector6}'), url('${vector8}');
     background-position: center, center, -34px 33px;
     background-size: auto, auto, 669px 860px;
   }
 
   @media (min-width: 643px) and (max-width: 768px) {
-    background-image: url("${heroImage}"), url("${vector6}"), url("${vector7}");
+    background-image: url('${heroImage}'), url('${vector6}'), url('${vector7}');
     background-position: 92px 13px, 287px 56px, 104px 284px;
     background-size: auto;
     background-repeat: no-repeat;

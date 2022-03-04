@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatNumberAccent, StatNumber, StatDescription } from './components';
+import { StatDescription, StatNumber, StatNumberAccent } from './components';
 
 export const Stat = React.memo(({ number, description, accent }) => (
   <div>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
+import { Burger } from '@/components/Burger';
 import { Button } from '@/components/ReusableComponents/components';
 import { DESKTOP, MOBILE, TABLET } from '@/constants/Variables';
-import { Burger } from '@/components/Burger';
 
 export const StyledBurger = styled(Burger)``;
 

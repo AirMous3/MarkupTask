@@ -2,14 +2,14 @@ import React from 'react';
 import { GetStartedForm } from '@/components/GetStartedForm';
 import { Stat } from '@/components/Stat';
 import {
+  ContentDescription,
+  ContentOffer,
+  ContentStats,
+  ContentTitle,
   MainContent,
   MainImages,
   MainWrapper,
   SectionWrapper,
-  ContentOffer,
-  ContentStats,
-  ContentTitle,
-  ContentDescription,
 } from './components';
 
 export const Main = React.memo(() => (
