@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import union from '@/assets/icons/Union.svg';
 import { Button } from '@/components/ReusableComponents';
-import {
-  DESKTOP, MOBILE, MOBILE_SMALL, TABLET,
-} from '@/constants/Variables';
 
 export const Form = styled.form`
   display: flex;
@@ -16,31 +13,33 @@ export const Form = styled.form`
   box-shadow: ${(props) => props.theme.boxShadows[0]};
   box-sizing: border-box;
 
-  @media ${DESKTOP} {
-    ${Button} {
-      padding: 16px 48px 15px 49px;
-    }
-  }
-  @media ${TABLET} {
-    max-width: 427px;
-    margin-bottom: 80px;
-  }
+  ${({ theme }) => theme.above.laptop`
+      ${Button} {
+        padding: 16px 48px 15px 49px;
+      }
+`}
 
-  @media ${MOBILE} {
-    margin-bottom: 0;
+  ${({ theme }) => theme.between('tablet', 'laptop')`
+      max-width: 427px;
+      margin-bottom: 80px;
+`}
 
-    ${Button} {
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-  }
-  @media ${MOBILE_SMALL} {
-    ${Button} {
-      padding-left: 24px;
-      padding-right: 24px;
-    }
-  }
+  ${({ theme }) => theme.below.tablet`
+      margin-bottom: 0;
+
+      ${Button} {
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+`}
+  ${({ theme }) => theme.below.mobileM`
+     ${Button} {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+`}
 `;
+
 export const MessageIcon = styled.div`
   flex-shrink: 0;
   background-image: url(${union});

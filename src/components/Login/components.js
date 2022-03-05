@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import notificationIcon from '@/assets/icons/notification.svg';
-import { HD, MOBILE, TABLET } from '@/constants/Variables';
 
 export const LoginWrapper = styled.div`
   display: flex;
@@ -13,9 +12,9 @@ export const LoginWrapper = styled.div`
     color: ${(props) => props.theme.colors.secondary};
   }
 
-  @media ${MOBILE} {
+  ${({ theme }) => theme.below.tablet`
     display: none;
-  }
+`}
 `;
 
 export const NotificationIcon = styled.div`
@@ -26,10 +25,11 @@ export const NotificationIcon = styled.div`
   margin-right: -39px;
   margin-left: 39px;
 
-  @media ${HD} {
-    margin: 0;
-  }
-  @media ${TABLET} {
-    margin: 0;
-  }
+  ${({ theme }) => theme.between('laptop', 'laptopL')`
+     margin: 0;
+`}
+
+  ${({ theme }) => theme.between('tablet', 'laptop')`
+     margin: 0;
+`}
 `;

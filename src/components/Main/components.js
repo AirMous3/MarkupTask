@@ -3,18 +3,15 @@ import heroImage from '@/assets/images/Hero Image.png';
 import vector6 from '@/assets/images/Vector6.png';
 import vector7 from '@/assets/images/Vector7.png';
 import vector8 from '@/assets/images/Vector8.png';
-import {
-  DESKTOP, MOBILE, MOBILE_SMALL, TABLET,
-} from '@/constants/Variables';
 
 export const MainWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media ${MOBILE} {
+  ${({ theme }) => theme.below.tablet`
     flex-direction: column-reverse;
-    align-items: center;
-  }
+      align-items: center;
+`}
 `;
 
 export const MainContent = styled.div`
@@ -22,23 +19,25 @@ export const MainContent = styled.div`
   flex-direction: column;
   color: ${(props) => props.theme.colors.primary};
 
-  @media ${DESKTOP} {
+  ${({ theme }) => theme.above.laptop`
     margin-top: 100px;
-  }
+`}
 
-  @media ${TABLET} {
-    max-width: 399px;
-    margin-top: 40px;
-    padding-left: 30px;
-  }
+  ${({ theme }) => theme.between('tablet', 'laptop')`
+      max-width: 399px;
+      margin-top: 40px;
+      padding-left: 30px;
+`}
 
-  @media ${MOBILE} {
-    padding-right: 10px;
-  }
-  @media ${MOBILE_SMALL} {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+  ${({ theme }) => theme.below.tablet`
+     padding-right: 10px;
+`}
+
+
+  ${({ theme }) => theme.below.mobileM`
+      padding-left: 40px;
+      padding-right: 40px;
+`}
 `;
 
 export const ContentTitle = styled.div`
@@ -72,16 +71,17 @@ export const ContentOffer = styled.h2`
     }
   }
 
-  @media ${TABLET} {
-    font-size: 34px;
-  }
-  @media ${MOBILE} {
-    max-width: 553px;
-  }
+  ${({ theme }) => theme.between('tablet', 'laptop')`
+   font-size: 50px;
+`}
 
-  @media ${MOBILE_SMALL} {
+  ${({ theme }) => theme.below.tablet`
+    max-width: 553px;
+`}
+
+  ${({ theme }) => theme.below.mobileM`
     font-size: 48px;
-  }
+`}
 `;
 
 export const ContentDescription = styled.div`
@@ -91,12 +91,13 @@ export const ContentDescription = styled.div`
   opacity: 0.7;
   margin-bottom: 53px;
 
-  @media ${TABLET} {
-    font-size: 18px;
-  }
-  @media ${MOBILE} {
-    margin-bottom: 51px;
-  }
+  ${({ theme }) => theme.between('tablet', 'laptop')`
+   font-size: 18px;
+`}
+
+  ${({ theme }) => theme.below.tablet`
+     margin-bottom: 51px;
+`}
 `;
 
 export const ContentStats = styled.div`
@@ -104,17 +105,17 @@ export const ContentStats = styled.div`
   justify-content: space-between;
   margin-right: -25px;
 
-  @media ${MOBILE} {
-    display: none;
-  }
+  ${({ theme }) => theme.below.tablet`
+      display: none;
+`}
 `;
 
 export const SectionWrapper = styled.section`
   padding-bottom: 50px;
 
-  @media ${MOBILE} {
-    padding-top: 60px;
-  }
+  ${({ theme }) => theme.below.tablet`
+      padding-top: 60px;
+`}
 `;
 
 export const MainImages = styled.div`
@@ -126,35 +127,35 @@ export const MainImages = styled.div`
   background-repeat: no-repeat;
   filter: drop-shadow(50px -56px 104px rgba(28, 91, 235, 0.05));
 
-  @media ${DESKTOP} {
-    margin-right: -76px;
-  }
+  ${({ theme }) => theme.above.laptop`
+      margin-right: -76px;
+`}
 
-  @media ${TABLET} {
-    max-width: 501px;
-    height: 601px;
-    background-size: cover, 284px, 422px;
-    background-position: 0 0px, 120px 21px, -3px 188px;
-  }
+  ${({ theme }) => theme.between('tablet', 'laptop')`
+      max-width: 501px;
+      height: 601px;
+      background-size: cover, 284px, 422px;
+      background-position: 0 0px, 120px 21px, -3px 188px;
+`}
 
-  @media ${MOBILE} {
-    flex: initial;
-    width: 100%;
-    height: 890px;
-    background-image: url('${heroImage}'), url('${vector6}'), url('${vector8}');
-    background-position: center, center, -34px 33px;
-    background-size: auto, auto, 669px 860px;
-  }
+  ${({ theme }) => theme.below.tablet`
+      flex: initial;
+      width: 100%;
+      height: 890px;
+      background-image: url('${heroImage}'), url('${vector6}'), url('${vector8}');
+      background-position: center, center, -34px 33px;
+      background-size: auto, auto, 669px 860px;
+`}
 
-  @media (min-width: 643px) and (max-width: 768px) {
-    background-image: url('${heroImage}'), url('${vector6}'), url('${vector7}');
-    background-position: 92px 13px, 287px 56px, 104px 284px;
-    background-size: auto;
-    background-repeat: no-repeat;
-  }
+  ${({ theme }) => theme.between('mobileL', 'tablet')`
+      background-image: url('${heroImage}'), url('${vector6}'), url('${vector7}');
+      background-position: 92px 13px, 287px 56px, 104px 284px;
+      background-size: auto;
+      background-repeat: no-repeat;
+`}
 
-  @media ${MOBILE_SMALL} {
-    height: 750px;
-    background-size: cover;
-  }
+  ${({ theme }) => theme.below.mobileM`
+       height: 750px;
+      background-size: cover;
+`}
 `;

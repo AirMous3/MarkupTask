@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { HD, TABLET } from '@/constants/Variables';
 
 export const UlWrapper = styled.ul`
   display: flex;
@@ -34,20 +33,21 @@ export const UlWrapper = styled.ul`
     color: ${(props) => props.theme.colors.secondary};
   }
 
-  @media ${TABLET} {
+  ${({ theme }) => theme.between('tablet', 'laptop')`
+      padding: 0;
+    margin: 0;
+
+    li {
+      margin-left: 18px;
+    }
+`}
+
+  ${({ theme }) => theme.between('laptop', 'laptopL')`
     padding: 0;
     margin: 0;
 
     li {
       margin-left: 18px;
     }
-  }
-  @media ${HD} {
-    padding: 0;
-    margin: 0;
-
-    li {
-      margin-left: 18px;
-    }
-  }
+`}
 `;

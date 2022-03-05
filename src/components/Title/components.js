@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import windIcon from '@/assets/icons/wind.svg';
-import { MOBILE } from '@/constants/Variables';
 
 export const TitleIcon = styled.div`
   background-image: url(${windIcon});
@@ -17,7 +16,7 @@ export const TitleText = styled.div`
   line-height: ${(props) => props.theme.lineHeights[2]};
   font-weight: ${(props) => props.theme.fontWeights.bold};
 
-  @media ${MOBILE} {
-    margin-left: 9px;
-  }
+  ${({ theme }) => theme.below.tablet`
+     margin-left: 9px;
+`}
 `;
