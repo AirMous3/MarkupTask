@@ -6,13 +6,14 @@ export const AppMain = styled.main`
   padding-top: 150px;
 
   ${({ theme }) => theme.above.laptop`
-      padding-left: 40px;
+      padding-left: 74px;
       background-image: url(${topLines}), url(${bottomLines});
       background-repeat: no-repeat;
-      background-position: 81% 7%, 11% 91%;
+      background-position: 100% 7%,0% 97%;
 `}
   ${({ theme }) => theme.below.tablet`
-    padding-top: 24px;
+      padding-top: 24px;
+      padding-bottom: 122px;
 `}
 
   ${({ theme }) => theme.between('tablet', 'laptop')`

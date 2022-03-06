@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import heroImage from '@/assets/images/Hero Image.png';
 import vector6 from '@/assets/images/Vector6.png';
 import vector7 from '@/assets/images/Vector7.png';
-import vector8 from '@/assets/images/Vector8.png';
+import heroImageM from '@/assets/images/mobile/Hero ImageM.png';
+import vector8 from '@/assets/images/mobile/Vector8.png';
 
 export const MainWrapper = styled.div`
   display: flex;
@@ -50,7 +51,7 @@ export const ContentOffer = styled.h2`
   font-size: ${(props) => props.theme.fontSizes[4]};
   font-weight: ${(props) => props.theme.fontWeights.bold};
   line-height: ${(props) => props.theme.lineHeights[4]};
-  margin-top: 19px;
+  margin-top: 15px;
   margin-bottom: 30px;
   letter-spacing: -0.01em;
   max-width: 543px;
@@ -78,7 +79,10 @@ export const ContentOffer = styled.h2`
   ${({ theme }) => theme.below.tablet`
     max-width: 553px;
 `}
-
+  ${({ theme }) => theme.below.mobileL`
+    margin-top: 17px;
+    margin-bottom: 31px;
+`}
   ${({ theme }) => theme.below.mobileM`
     font-size: 48px;
 `}
@@ -111,7 +115,9 @@ export const ContentStats = styled.div`
 `;
 
 export const SectionWrapper = styled.section`
-  padding-bottom: 50px;
+  ${({ theme }) => theme.between('tablet', 'laptop')`
+      padding-bottom: 50px;
+`}
 
   ${({ theme }) => theme.below.tablet`
       padding-top: 60px;
@@ -142,20 +148,14 @@ export const MainImages = styled.div`
       flex: initial;
       width: 100%;
       height: 890px;
-      background-image: url('${heroImage}'), url('${vector6}'), url('${vector8}');
-      background-position: center, center, -34px 33px;
-      background-size: auto, auto, 669px 860px;
+      background-image: url('${heroImage}'), url('${vector8}');
+      background-position: center,1px 75px;
+      background-size: auto,750px 814px;
 `}
 
-  ${({ theme }) => theme.between('mobileL', 'tablet')`
-      background-image: url('${heroImage}'), url('${vector6}'), url('${vector7}');
-      background-position: 92px 13px, 287px 56px, 104px 284px;
-      background-size: auto;
-      background-repeat: no-repeat;
-`}
-
-  ${({ theme }) => theme.below.mobileM`
-       height: 750px;
-      background-size: cover;
+  ${({ theme }) => theme.below.mobileL`
+      background-image: url('${heroImageM}'), url('${vector8}');
+      background-position: -2px -109px,4px 40px;
+      background-size: auto, auto;
 `}
 `;

@@ -15,7 +15,7 @@ export const Form = styled.form`
 
   ${({ theme }) => theme.above.laptop`
       ${Button} {
-        padding: 16px 48px 15px 49px;
+        padding: 16px 45px 15px 48px;
       }
 `}
 

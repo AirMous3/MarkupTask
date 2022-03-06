@@ -22,7 +22,6 @@ export const NotificationIcon = styled.div`
   width: 20px;
   height: 20px;
   cursor: pointer;
-  margin-right: -39px;
   margin-left: 39px;
 
   ${({ theme }) => theme.between('laptop', 'laptopL')`
