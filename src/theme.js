@@ -38,6 +38,7 @@ export const theme = {
     primary: '#215EE9',
     secondary: '#7D8790',
     background: '#EBF1FF',
+    blur: '#bed2ff',
   },
   below,
   above,

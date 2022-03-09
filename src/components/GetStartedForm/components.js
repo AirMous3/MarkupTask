@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import union from '@/assets/icons/Union.svg';
-import { Button } from '@/components/ReusableComponents';
+import { Button } from '@/components/Button';
 
 export const Form = styled.form`
   display: flex;

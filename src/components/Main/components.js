@@ -67,7 +67,7 @@ export const ContentOffer = styled.h2`
       left: 0;
       width: 220px;
       height: 26px;
-      background: #bed2ff;
+      background: ${(props) => props.theme.colors.blur};
       filter: blur(44px);
       z-index: -1;
     }

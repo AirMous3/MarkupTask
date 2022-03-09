@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from '@/components/ReusableComponents';
+import { Button } from '@/components/Button';
 
 import { LoginWrapper, NotificationIcon } from './components';
 
