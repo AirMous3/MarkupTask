@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import union from '@/assets/icons/Union.svg';
 import { Button } from '@/components/ReusableComponents';
 

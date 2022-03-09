@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import bottomLines from '@/assets/icons/bottomLines.svg';
 import topLines from '@/assets/icons/toplines.svg';
 

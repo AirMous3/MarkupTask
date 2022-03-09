@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { StatDescription, StatNumber, StatNumberAccent } from './components';
 
 export const Stat = React.memo(({ number, description, accent }) => (

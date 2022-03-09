@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import notificationIcon from '@/assets/icons/notification.svg';
 
 export const LoginWrapper = styled.div`

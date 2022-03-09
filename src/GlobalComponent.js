@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+
 import robotoBoldTtf from './assets/fonts/Roboto-Bold.ttf';
 import robotoBoldWoff from './assets/fonts/Roboto-Bold.woff';
 import robotoBoldWoff2 from './assets/fonts/Roboto-Bold.woff2';

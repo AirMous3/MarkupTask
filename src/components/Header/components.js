@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { Burger } from '@/components/Burger';
 import { Button } from '@/components/ReusableComponents/components';
 
@@ -8,7 +9,6 @@ export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 
   ${({ theme }) => theme.above.laptop`
       ${Button} {
@@ -40,7 +40,7 @@ export const HeaderWrapper = styled.div`
         display: none;
       }
 `}
-  
+
   ${({ theme }) => theme.between('tablet', 'laptop')`
        ${Button} {
         margin-left: 16px;
@@ -57,5 +57,4 @@ export const HeaderWrapper = styled.div`
         display: none;
       }
 `}
-  
 `;

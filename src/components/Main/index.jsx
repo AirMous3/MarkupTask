@@ -1,6 +1,8 @@
 import React from 'react';
+
 import { GetStartedForm } from '@/components/GetStartedForm';
 import { Stat } from '@/components/Stat';
+
 import {
   ContentDescription,
   ContentOffer,

@@ -1,7 +1,8 @@
+import React from 'react';
+
 import { Login } from '@/components/Login';
 import { Navbar } from '@/components/Navbar';
 import { Title } from '@/components/Title';
-import React from 'react';
 
 import { HeaderWrapper, StyledBurger } from './components';
 

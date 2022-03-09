@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { BurgerBar, BurgerWrap } from './components';
 
 export const Burger = React.memo(({ className }) => (

@@ -1,21 +1,22 @@
 import React, { useCallback, useState } from 'react';
+
+import { Form, Input, MessageIcon } from '@/components/GetStartedForm/components';
 import { Button } from '@/components/ReusableComponents';
-import { Form, Input, MessageIcon } from './components';
 
 export const GetStartedForm = React.memo(() => {
   const [email, setEmail] = useState('');
 
-  const onSubmitHandler = useCallback((e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
     setEmail('');
   }, []);
 
-  const onEmailChange = useCallback((e) => {
+  const handleEmailChange = useCallback((e) => {
     setEmail(e.currentTarget.value);
   }, []);
 
   return (
-    <Form onSubmit={onSubmitHandler}>
+    <Form onSubmit={handleSubmit}>
       <MessageIcon />
       <Input
         title="Email input"
@@ -23,7 +24,7 @@ export const GetStartedForm = React.memo(() => {
         placeholder="Enter your email"
         value={email}
         required
-        onChange={onEmailChange}
+        onChange={handleEmailChange}
       />
       <Button type="submit">Get Started</Button>
     </Form>

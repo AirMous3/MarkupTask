@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import windIcon from '@/assets/icons/wind.svg';
 
 export const TitleIcon = styled.div`
