@@ -7,7 +7,7 @@ import robotoRegularTtf from './assets/fonts/Roboto-Regular.ttf';
 import robotoRegularWoff from './assets/fonts/Roboto-Regular.woff';
 import robotoRegularWoff2 from './assets/fonts/Roboto-Regular.woff2';
 
-const Global = createGlobalStyle`
+export const Global = createGlobalStyle`
   @font-face {
     font-family: 'Roboto';
     src: url(${robotoBoldWoff2}) format('woff2'),
@@ -44,4 +44,3 @@ const Global = createGlobalStyle`
     list-style-type: none;
   }
 `;
-export default Global;

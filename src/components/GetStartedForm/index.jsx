@@ -1,7 +1,8 @@
 import React, { useCallback, useState } from 'react';
 
-import { Form, Input, MessageIcon } from '@/components/GetStartedForm/components';
 import { Button } from '@/components/Button';
+
+import { Form, Input, MessageIcon } from './components';
 
 export const GetStartedForm = React.memo(() => {
   const [email, setEmail] = useState('');
